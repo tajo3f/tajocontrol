@@ -1,25 +1,34 @@
-# TAJO CONTROL — Página de Vendas
+# TAJO CONTROL — Publicação da página de vendas
 
-## O que falta antes de publicar
-1. Crie o produto na Kiwify e copie o link do checkout.
-2. Abra `index.html` e procure por `SEU_LINK_DO_CHECKOUT`.
-3. Substitua pelo link real da Kiwify.
-4. No mesmo bloco `TAJO`, ajuste a frase da garantia para exatamente o prazo configurado no checkout.
-5. Publique a pasta em Vercel, Netlify, GitHub Pages ou hospedagem estática equivalente.
-6. Copie a URL pública e cole no campo **Página de vendas** da Kiwify.
+## 1. Checkout
+No final de `index.html`, substitua:
 
-## Estrutura de persuasão aplicada
-- Dor concreta antes do produto.
-- Autodiagnóstico interativo para gerar identificação.
-- Demonstração visual antes do preço.
-- Especificidade: 15 áreas e 5 bônus.
-- Antes x depois para facilitar comparação.
-- Transparência sobre limitações e compatibilidade.
-- CTA repetido e consistente.
-- Sem falsa escassez, depoimentos inventados ou promessa de faturamento.
+`https://pay.kiwify.com.br/SEU_LINK_DO_CHECKOUT`
 
-## Arquivos
-- `index.html`: página completa.
-- `assets/tajo-control-produto.png`: imagem demonstrativa.
-- `preview-desktop.png`: prévia visual.
-- `preview-mobile.png`: prévia mobile.
+pelo link real do checkout do TAJO CONTROL na Kiwify.
+
+## 2. Preço e parcelamento usados na página
+- Preço à vista: **R$ 97,90**
+- Comunicação da página: **ou até 12x no cartão***
+- Não foi exibido um valor mensal inventado, pois o parcelamento da Kiwify possui acréscimo e o valor final deve ser confirmado no checkout.
+
+### Configuração sugerida na Kiwify
+Em **Produtos > TAJO CONTROL > Configurações > Pagamentos**, permita o maior número de parcelas compatível com a oferta (estratégia planejada: até 12x). A Kiwify costuma pré-selecionar o máximo de parcelas no checkout. Confira o valor real de cada opção no checkout antes de divulgar um valor específico por parcela.
+
+Se depois quisermos anunciar algo como `12x de R$ X,XX`, abra o checkout, confira o valor que a própria Kiwify exibe e atualize a página com esse número real.
+
+## 3. Garantia
+No objeto `TAJO` no final do HTML, troque o texto de garantia para o prazo realmente configurado na Kiwify.
+
+## 4. Publicação
+Envie `index.html` e a pasta `assets` para a mesma raiz do seu site. Sugestão de endereço: `control.tajodigital.com.br`.
+
+## 5. Teste antes de divulgar
+1. Abra a página no celular e desktop.
+2. Clique em todos os CTAs.
+3. Faça o caminho até o checkout.
+4. Confira preço à vista e parcelamento real.
+5. Faça uma compra teste quando possível.
+6. Valide a entrega automática do produto.
+
+*O parcelamento possui acréscimo conforme as condições exibidas no checkout da Kiwify.*
