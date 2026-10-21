@@ -37,7 +37,7 @@
 <footer><div class="container foot"><p><strong style="color:#b9c6d5">TAJO CONTROL — Painel do Negócio.</strong><br>Ferramenta gerencial em planilha. Não substitui ERP fiscal, contabilidade, conciliação bancária automática, gestão avançada de estoque ou aconselhamento financeiro. Os resultados exibidos dependem da qualidade e atualização dos dados registrados.<br><br>*Parcelamento sujeito às condições do checkout. Compras parceladas possuem acréscimo e o valor total é informado antes da confirmação.</p><div class="footlinks"><a href="mailto:joaopaulo@tajodigital.com.br">Suporte</a><a href="#faq">Dúvidas</a><a href="#oferta">Comprar</a></div></div></footer>
 <div class="mobile"><button class="btn primary" data-buy>R$ 97,90 à vista • ou parcele</button></div>
 <script>
-const TAJO={checkout:"https://pay.kiwify.com.br/SEU_LINK_DO_CHECKOUT",garantia:"Garantia conforme o prazo informado no checkout da Kiwify."};
+const TAJO={checkout:"https://pay.kiwify.com.br/ACQu2Xg",garantia:"Garantia conforme o prazo informado no checkout da Kiwify."};
 document.getElementById('guarantee').textContent=TAJO.garantia;
 document.querySelectorAll('[data-buy]').forEach(b=>b.onclick=()=>{if(TAJO.checkout.includes('SEU_LINK')) return alert('Antes de publicar, substitua o link do checkout no final do index.html.'); location.href=TAJO.checkout});
 document.querySelectorAll('.fq').forEach(b=>b.onclick=()=>b.parentElement.classList.toggle('open'));
